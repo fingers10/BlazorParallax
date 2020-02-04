@@ -1,0 +1,36 @@
+﻿@page "/"
+@inject IJSRuntime JSRuntime
+
+<HomeSection></HomeSection>
+
+<ColumnSection></ColumnSection>
+
+<MediaSection></MediaSection>
+
+<GridSection></GridSection>
+
+<CarouselSection></CarouselSection>
+
+<NestedSection></NestedSection>
+
+<IconSection></IconSection>
+
+<FloaterSection></FloaterSection>
+
+<CardsSection></CardsSection>
+
+<FooterSection></FooterSection>
+
+<Modal></Modal>
+
+@code{
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("highlightMenu");
+        }
+    }
+
+}

@@ -1,0 +1,32 @@
+﻿@inherits TopNavMenuBase
+
+<nav class="site-nav family-sans text-uppercase navbar navbar-expand-md navbar-dark fixed-top">
+
+    <div class="container-fluid">
+
+        <NavLink class="navbar-brand" href="#page-hero" Match="NavLinkMatch.All">
+            <i class="fab fa-microsoft"></i> Blazor Parallax
+        </NavLink>
+
+        <button type="button" class="navbar-toggler @NavToggleCssClass" @onclick="ToggleNavMenu" aria-controls="#myTogglerNav"
+                aria-label="Toggle Navigation" aria-expanded="@($"{!collapseNavMenu}".ToLowerInvariant())">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <section class="navbar-collapse collapse @NavMenuCssClass" id="myTogglerNav">
+            <div class="navbar-nav ml-auto">
+                <NavLink class="nav-item nav-link" href="#page-hero" Match="NavLinkMatch.All">home</NavLink>
+                <NavLink class="nav-item nav-link" href="#page-multicolumn" Match="NavLinkMatch.All">multi column</NavLink>
+                <NavLink class="nav-item nav-link" href="#page-media" Match="NavLinkMatch.All">media</NavLink>
+                <NavLink class="nav-item nav-link" href="#page-photogrid" Match="NavLinkMatch.All">gallery</NavLink>
+                <NavLink class="nav-item nav-link" href="#page-carousel" Match="NavLinkMatch.All">carousel</NavLink>
+                <NavLink class="nav-item nav-link" href="#page-nested" Match="NavLinkMatch.All">nested</NavLink>
+                <NavLink class="nav-item nav-link" href="#page-iconcolumns" Match="NavLinkMatch.All">icons</NavLink>
+                <NavLink class="nav-item nav-link" href="#page-floater" Match="NavLinkMatch.All">floater</NavLink>
+                <NavLink class="nav-item nav-link" href="#page-cards" Match="NavLinkMatch.All">cards</NavLink>
+            </div>
+        </section>
+
+    </div>
+
+</nav>
