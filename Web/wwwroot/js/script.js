@@ -69,3 +69,12 @@ function intersectionHandler(entry) {
     }
 }
 
+function handleCarousel()
+{
+    $('#layout-carousel').carousel({ interval: 2000 });
+
+    $('.carousel-control-prev').click(
+        () => $('#layout-carousel').carousel('prev'));
+    $('.carousel-control-next').click(
+        () => $('#layout-carousel').carousel('next'));
+}

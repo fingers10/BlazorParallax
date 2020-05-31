@@ -30,6 +30,7 @@
         if (firstRender)
         {
             await JSRuntime.InvokeVoidAsync("highlightMenu");
+            await JSRuntime.InvokeVoidAsync("handleCarousel");
         }
     }
 
